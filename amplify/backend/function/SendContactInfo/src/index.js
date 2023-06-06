@@ -8,7 +8,7 @@ const verified_email = process.env.VERIFIED_EMAIL
 /**
  * @type {import('@types/aws-lambda').APIGatewayProxyHandler}
  */
-exports.handler = event => {
+exports.handler = async (event) => {
   console.log(`EVENT: ${JSON.stringify(event)}`);
   console.log(`EMAIL: ${process.env.VERIFIED_EMAIL}`)
   for (const record of event.Records) {
