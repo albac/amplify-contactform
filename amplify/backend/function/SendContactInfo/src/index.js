@@ -24,9 +24,9 @@ exports.handler = async (event) => {
       const contactMessage = record.dynamodb.NewImage.Message.S
       const contactSubject = record.dynamodb.NewImage.Subject.S
 
-      const bodyData = 'Message:' + contactMessage +
-        'Contact Name: ' + contactName
-        'Contact Email: ' + contactEmail 
+      const bodyData = '<br/><b>Message</b>: ' + contactMessage +
+        '<br/><b>Contact Name</b>: ' + contactName +
+        '<br/><b>Contact Email</b>: ' + contactEmail 
 
       console.log('Verified email is: ', verified_email) 
       console.log('Contact Name is: ', contactName)
@@ -39,7 +39,10 @@ exports.handler = async (event) => {
         Message: {
           Subject: { Data: contactSubject },
           Body: {
-            Text: { Data: bodyData},
+            Html: {
+              Charset: "UTF-8",
+              Data: bodyData
+            },
           },
         },
       }).promise()
