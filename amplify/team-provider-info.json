@@ -1,0 +1,33 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifycontactform-dev-124325-authRole",
+      "UnauthRoleArn": "arn:aws:iam::849514089141:role/amplify-amplifycontactform-dev-124325-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::849514089141:role/amplify-amplifycontactform-dev-124325-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-amplifycontactform-dev-124325-deployment",
+      "UnauthRoleName": "amplify-amplifycontactform-dev-124325-unauthRole",
+      "StackName": "amplify-amplifycontactform-dev-124325",
+      "StackId": "arn:aws:cloudformation:us-west-2:849514089141:stack/amplify-amplifycontactform-dev-124325/44e51ac0-0489-11ee-a5a8-0687caf5c0e3",
+      "AmplifyAppId": "d2kytoszxq8mfz"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2kytoszxq8mfz",
+          "type": "cicd"
+        }
+      },
+      "function": {
+        "SendContactInfo": {
+          "deploymentBucketName": "amplify-amplifycontactform-dev-124325-deployment",
+          "s3Key": "amplify-builds/SendContactInfo-6d642b6a6b74452b7867-build.zip",
+          "verifiedEmail": "alfredo@albac.dev"
+        }
+      },
+      "api": {
+        "amplifycontactform": {}
+      }
+    }
+  }
+}

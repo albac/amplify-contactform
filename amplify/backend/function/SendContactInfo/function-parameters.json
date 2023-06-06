@@ -1,0 +1,9 @@
+{
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "verifiedEmail",
+      "environmentVariableName": "VERIFIED_EMAIL"
+    }
+  ]
+}
