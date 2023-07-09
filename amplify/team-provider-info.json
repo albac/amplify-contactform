@@ -21,7 +21,7 @@
       "function": {
         "SendContactInfo": {
           "deploymentBucketName": "amplify-amplifycontactform-dev-124325-deployment",
-          "s3Key": "amplify-builds/SendContactInfo-6332317a335238747139-build.zip",
+          "s3Key": "amplify-builds/SendContactInfo-4a735258713063366b43-build.zip",
           "verifiedEmail": "alfredo@albac.dev"
         }
       },
