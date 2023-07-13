@@ -156,7 +156,7 @@
                 "ses:SendEmail"
               ],
               "Effect": "Allow",
-              "Resource": "arn:aws:ses:us-west-2:849514089141:identity/albac.dev"
+              "Resource": "arn:aws:ses:${region}:${account}:identity/albac.dev"
             },
             {
               "Effect": "Allow",
